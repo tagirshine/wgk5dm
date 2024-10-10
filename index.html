@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta property="og:title" content="Page name" />
+    <meta property="og:description" content="short description (accordion menu example)" />
+    <meta property="og:url" content="https://DOMAIN.com/page" />
+    <meta property="og:image" content="https://DOMAIN.com/animals.jpg" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="accordion js-accordion" role="region" aria-labelledby="accordion-heading">
+    <h2 id="accordion-heading" class="accordion__heading">Animal breeds</h2>
+
+    <div class="accordion__item" data-accordion-item="1">
+        <button class="accordion__title" aria-expanded="false" aria-controls="content1" id="title1" data-accordion-title="1">
+            Сats
+        </button>
+        <div class="accordion__content" id="content1" role="region" aria-labelledby="title1" hidden data-accordion-content="1">
+            <p>Persian, Maine Coon, Siamese, Bengal, Sphynx, British Shorthair, Ragdoll, Abyssinian, Burmese, Scottish Fold, Birman, Russian Blue, American Shorthair, Norwegian Forest, Oriental, Turkish Angora, Chartreux, Devon Rex, Cornish Rex, Tonkinese, Egyptian Mau, Savannah, Himalayan, Balinese, Somali, Japanese Bobtail, Singapura.</p>
+        </div>
+    </div>
+
+    <div class="accordion__item" data-accordion-item="2">
+        <button class="accordion__title" aria-expanded="false" aria-controls="content2" id="title2" data-accordion-title="2">
+            Dogs
+        </button>
+        <div class="accordion__content" id="content2" role="region" aria-labelledby="title2" hidden data-accordion-content="2">
+            <p>Labrador Retriever, German Shepherd, Golden Retriever, Bulldog, Beagle, Poodle, Rottweiler, Yorkshire Terrier, Boxer, Dachshund, Shih Tzu, Siberian Husky, Great Dane, Chihuahua, Pomeranian, Doberman Pinscher, Border Collie, Australian Shepherd, Cocker Spaniel, Basset Hound, Saint Bernard, Akita, Maltese, English Setter, Greyhound, Dalmatian, Newfoundland, Belgian Malinois, Shetland Sheepdog, Bull Terrier</p>
+        </div>
+    </div>
+
+    <div class="accordion__item" data-accordion-item="3">
+        <button class="accordion__title" aria-expanded="false" aria-controls="content3" id="title3" data-accordion-title="3">
+            Horses
+        </button>
+        <div class="accordion__content" id="content3" role="region" aria-labelledby="title3" hidden data-accordion-content="3">
+            <p>Arabian, Thoroughbred, Quarter Horse, Appaloosa, Andalusian, Morgan, Clydesdale, Shire, Mustang, Tennessee Walking Horse, Belgian Draft, Haflinger, Hanoverian, Friesian, Percheron, Lipizzaner, American Paint Horse, Icelandic Horse, Welsh Pony, Shetland Pony, Paso Fino, Standardbred, Trakehner, Gypsy Vanner, Oldenburg, Rocky Mountain Horse, Marwari, Norwegian Fjord, Connemara Pony, Suffolk Punch</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
