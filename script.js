@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const accordion = document.querySelector('.accordion');
+  const accordion = document.querySelector('.js-accordion');
   let openItem = null;
 
   accordion.addEventListener('click', function(event) {
