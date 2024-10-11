@@ -20,18 +20,30 @@ h2 {
     line-height: 1.5;
     border-left: 1px solid #380c64;
     border-right: 1px solid #380c64;
+    background: #efe9f3;
+    color: #2b054b;
 }
 .accordion__content p {
     padding: 0;
     margin: 0;
 }
 
-.accordion__item {
-
+.accordion__item:last-child {
+    .accordion__content {
+        border-bottom: 1px solid #380c64;
+    }
 }
 .accordion__item:hover {
     .accordion__title{
         background: #5a1396;
         color: #fff;
+    }
+}
+
+.accordion__title:focus{
+    background: #5a1396;
+    color: #fff;
+    .accordion__title {
+        outline: none;
     }
 }
