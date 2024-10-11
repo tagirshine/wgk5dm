@@ -1,0 +1,57 @@
+h2 {
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+}
+.accordion__title {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0; /*10px;*/
+    width: 100%;
+    text-align: left;
+    padding: 8px 0 8px 30px;
+    border: 0;
+    background: #380c64;
+    color: #ececec;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+
+}
+
+.accordion__title[aria-expanded="true"] {
+    border-radius: 5px 5px 0 0;
+    padding-left: 35px;
+}
+
+.accordion__content {
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    border-left: 1px solid #380c64;
+    border-right: 1px solid #380c64;
+    background: #efe9f3;
+    color: #2b054b;
+    border-bottom: 1px solid #380c64;
+    border-radius: 0 0 5px 5px;
+}
+.accordion__content p {
+    padding: 0;
+    margin: 0;
+}
+
+.accordion__item {
+    border-bottom: 2px solid transparent;
+}
+
+.accordion__item:hover  .accordion__title {
+    background: #5a1396;
+    color: #fff;
+    padding-left: 35px;
+}
+
+.accordion__title:focus{
+    background: #5a1396;
+    color: #fff;
+    padding-left: 35px;
+}
+
