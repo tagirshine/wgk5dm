@@ -3,6 +3,7 @@ h2 {
     padding: 0 20px;
 }
 .accordion__title {
+    cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     margin: 0; /*10px;*/
@@ -12,6 +13,14 @@ h2 {
     border: 0;
     background: #380c64;
     color: #ececec;
+    border-radius: 5px;
+    transition: padding-left 0.2s ease;
+
+}
+
+.accordion__title[aria-expanded="true"] {
+    border-radius: 5px 5px 0 0;
+    padding-left: 35px;
 }
 
 .accordion__content {
@@ -22,28 +31,27 @@ h2 {
     border-right: 1px solid #380c64;
     background: #efe9f3;
     color: #2b054b;
+    border-bottom: 1px solid #380c64;
+    border-radius: 0 0 5px 5px;
 }
 .accordion__content p {
     padding: 0;
     margin: 0;
 }
 
-.accordion__item:last-child {
-    .accordion__content {
-        border-bottom: 1px solid #380c64;
-    }
+.accordion__item {
+    border-bottom: 1px solid rgba(239, 233, 243, 0.5);
 }
-.accordion__item:hover {
-    .accordion__title{
-        background: #5a1396;
-        color: #fff;
-    }
+
+.accordion__item:hover  .accordion__title {
+    background: #5a1396;
+    color: #fff;
+    padding-left: 35px;
 }
 
 .accordion__title:focus{
     background: #5a1396;
     color: #fff;
-    .accordion__title {
-        outline: none;
-    }
+    padding-left: 35px;
 }
+
